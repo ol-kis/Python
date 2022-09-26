@@ -8,6 +8,7 @@ while count==0:
             print(f' day of the week "{list[int(num)-1]}" is working day')
         else:
             print(f' day of the week "{list[int(num)-1]}" is weekend')
+
         count=1
     
     else: 
