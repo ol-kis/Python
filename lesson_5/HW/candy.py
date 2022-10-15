@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Oct 10 15:41:55 2022
 
-@author: kiseleva_od
-"""
 import random
 count_of_candy=int(2021)
 max_count=28
