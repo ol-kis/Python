@@ -41,10 +41,10 @@ def put_attendance():
     sheet = wb['Посещаемость']
     i=pr.empty_line('Посещаемость')
     sheet.cell(row=i, column=2).value=date.today()
-    sheet.cell(row=i, column=1).value=input("Enter id student: \n") 
     pr.student_list("Ученики") 
-    sheet.cell(row=i, column=3).value=input("Enter subject:  \n")
+    sheet.cell(row=i, column=1).value=input("Enter id student: \n") 
     pr.subject_list("Предметы")
+    sheet.cell(row=i, column=3).value=input("Enter subject:  \n")
     sheet.cell(row=i, column=4).value=input("Enter attendance:  \n")
     wb.save(filename ='Классный журнал 7а.xlsx')
     wb.close()
