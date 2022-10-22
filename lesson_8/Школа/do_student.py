@@ -17,23 +17,21 @@ def student():
         try:
             m=int(id_student)
             if menu==1:
-                print([x for x in pr.printer("Оценки") if x[0]==str(m)])
+                print([x for x in pr.printer("Оценки") if x[0]==m])
+                break
+            if menu==2:
+                print([x for x in pr.printer("Посещаемость") if x[0]==m])
                 break
           
             
             
             
         except ValueError:
-            print("\nYou enter wrong number. Try again!")
-            
-    
+            print("\nYou enter wrong number. Try again!")      
         
-        
-        
+# student()      
         
   
         
-  
-student()
         
     
